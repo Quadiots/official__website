@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/official__website/static/css/main.bb1a1a07.chunk.css",
-    "main.js": "/official__website/static/js/main.e190a304.chunk.js",
-    "main.js.map": "/official__website/static/js/main.e190a304.chunk.js.map",
+    "main.css": "/official__website/static/css/main.016a6134.chunk.css",
+    "main.js": "/official__website/static/js/main.2c3ff19c.chunk.js",
+    "main.js.map": "/official__website/static/js/main.2c3ff19c.chunk.js.map",
     "runtime-main.js": "/official__website/static/js/runtime-main.19d91df0.js",
     "runtime-main.js.map": "/official__website/static/js/runtime-main.19d91df0.js.map",
-    "static/js/2.24bbd239.chunk.js": "/official__website/static/js/2.24bbd239.chunk.js",
-    "static/js/2.24bbd239.chunk.js.map": "/official__website/static/js/2.24bbd239.chunk.js.map",
+    "static/js/2.bcc2608a.chunk.js": "/official__website/static/js/2.bcc2608a.chunk.js",
+    "static/js/2.bcc2608a.chunk.js.map": "/official__website/static/js/2.bcc2608a.chunk.js.map",
     "index.html": "/official__website/index.html",
-    "static/css/main.bb1a1a07.chunk.css.map": "/official__website/static/css/main.bb1a1a07.chunk.css.map",
-    "static/js/2.24bbd239.chunk.js.LICENSE.txt": "/official__website/static/js/2.24bbd239.chunk.js.LICENSE.txt",
+    "static/css/main.016a6134.chunk.css.map": "/official__website/static/css/main.016a6134.chunk.css.map",
+    "static/js/2.bcc2608a.chunk.js.LICENSE.txt": "/official__website/static/js/2.bcc2608a.chunk.js.LICENSE.txt",
     "static/media/Quadiots__logo.2f6110e8.jpeg": "/official__website/static/media/Quadiots__logo.2f6110e8.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.19d91df0.js",
-    "static/js/2.24bbd239.chunk.js",
-    "static/css/main.bb1a1a07.chunk.css",
-    "static/js/main.e190a304.chunk.js"
+    "static/js/2.bcc2608a.chunk.js",
+    "static/css/main.016a6134.chunk.css",
+    "static/js/main.2c3ff19c.chunk.js"
   ]
 }
