@@ -8,6 +8,10 @@ function App() {
       <Tilt className="product">
         <img src={logo} alt="" />
       </Tilt>
+      <a className="twitter__style" href="https://twitter.com/quadiots">
+        {" "}
+        Follow Us on Twitter
+      </a>
     </div>
   );
 }

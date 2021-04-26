@@ -18,6 +18,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   transform-style: preserve-3d;
+  flex-direction: column;
 }
 
 .product {
@@ -31,5 +32,15 @@ body {
 }
 
 .product:hover {
-  transform: translate3d(-50%, 50%, 100px) rotate(-15deg);
+  transform: translate3d(0%, 0%, 0px);
+}
+
+.twitter__style {
+  width: max-content;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: rgb(0, 75, 236);
+  color: #fff;
+  text-decoration: none;
+  margin: 2rem;
 }
