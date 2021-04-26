@@ -2,11 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./Cursor.css";
 import classNames from "classnames";
 
+const isMobile = () => {
+  const ua = navigator.userAgent;
+  return /Android|Mobi/i.test(ua);
+};
+
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [hidden, setHidden] = useState(false);
   const [clicked, setClicked] = useState(false);
   const [linkHovered, setLinkHovered] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
     addEventListeners();
@@ -30,6 +35,10 @@ const Cursor = () => {
     document.removeEventListener("mouseup", onMouseUp);
   };
 
+  const onMouseMove = (e) => {
+    setPosition({ x: e.clientX, y: e.clientY });
+  };
+
   const onMouseDown = () => {
     setClicked(true);
   };
@@ -46,10 +55,6 @@ const Cursor = () => {
     setHidden(false);
   };
 
-  const onMouseMove = (e) => {
-    setPosition({ x: e.clientX, y: e.clientY });
-  };
-
   const handleLinkHoverEvents = () => {
     document.querySelectorAll("a").forEach((el) => {
       el.addEventListener("mouseover", () => setLinkHovered(true));
@@ -58,19 +63,23 @@ const Cursor = () => {
   };
 
   const cursorClasses = classNames("cursor", {
-    "cursor--hidden": hidden,
     "cursor--clicked": clicked,
+    "cursor--hidden": hidden,
     "cursor--link-hovered": linkHovered,
   });
 
-  return (
-    <div
-      className={cursorClasses}
-      style={{
-        left: `${position.x}px`,
-        top: `${position.y}px`,
-      }}
-    />
-  );
+  if (typeof navigator !== "undefined" && isMobile()) {
+    return null;
+  } else {
+    return (
+      <div
+        className={cursorClasses}
+        style={{
+          left: `${position.x}px`,
+          top: `${position.y}px`,
+        }}
+      />
+    );
+  }
 };
 export default Cursor;
