@@ -8,7 +8,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #fff;
 }
 
 .app {
@@ -22,13 +21,14 @@ body {
 }
 
 .product {
-  border-radius: 50%;
+  transition: 0.5s;
   transform-style: preserve-3d;
 }
 
 .product img {
   width: 300px;
   z-index: 11;
+  border-radius: 20px;
 }
 
 .product:hover {
@@ -43,4 +43,13 @@ body {
   color: #fff;
   text-decoration: none;
   margin: 2rem;
+}
+
+#myVideo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  object-fit: cover;
+  min-height: 100%;
 }
