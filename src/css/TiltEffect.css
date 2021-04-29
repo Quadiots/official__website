@@ -1,0 +1,44 @@
+.main {
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    flex-direction: column;
+}
+
+.product {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.product img {
+    width: 300px;
+    z-index: 11;
+    border-radius: 20px;
+}
+
+.product:hover {
+    transform: translate3d(0%, 0%, 0px);
+}
+
+.twitter__style {
+    width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: #4AA1F2;
+    color: #fff;
+    text-decoration: none;
+    margin: 2rem;
+}
+
+#myVideo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    object-fit: cover;
+    min-height: 100%;
+}

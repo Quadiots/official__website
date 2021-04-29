@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.tilt__card {
+    width: 20%;
+    height: 25vh;
+}
+
+.portfolioCard__container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+    backdrop-filter: blur(7.0px);
+    -webkit-backdrop-filter: blur(7.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 1rem;
+}
+
+.portfolioCard__name {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.portfolioCard__logo {
+    width: 5rem;
+    border-radius: 50px;
+}
+
+.portfolioCard__roles {
+    color: #59a8f1;
+}
+
+.portfolioCard__description {
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+    font-size: 0.95rem;
+    text-align: center;
+}
